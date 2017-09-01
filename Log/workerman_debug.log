@@ -1,0 +1,218 @@
+2017-09-01 16:32:08 pid:12400 Workerman[init.php] start in DEBUG mode
+2017-09-01 16:32:27 pid:12400 Workerman[init.php] Stopping ...
+2017-09-01 16:32:27 pid:12400 Workerman[init.php] has been stopped
+2017-09-01 16:33:56 pid:12455 Workerman[init.php] start in DEBUG mode
+2017-09-01 16:34:05 pid:12455 Workerman[init.php] Stopping ...
+2017-09-01 16:34:05 pid:12455 Workerman[init.php] has been stopped
+2017-09-01 16:34:07 pid:12462 Workerman[init.php] start in DAEMON mode
+2017-09-01 16:34:46 pid:12490 Workerman[init.php] stop 
+2017-09-01 16:34:46 pid:12490 Workerman[init.php] is stoping ...
+2017-09-01 16:34:46 pid:12464 Workerman[init.php] Stopping ...
+2017-09-01 16:34:46 pid:12464 Workerman[init.php] has been stopped
+2017-09-01 16:34:46 pid:12490 Workerman[init.php] stop success
+2017-09-01 16:37:50 pid:12555 Workerman[init.php] start in DAEMON mode
+2017-09-01 16:41:32 pid:12723 Workerman[init.php] stop 
+2017-09-01 16:41:32 pid:12723 Workerman[init.php] not run
+2017-09-01 16:41:42 pid:12726 Workerman[init.php] start in DAEMON mode
+2017-09-01 16:45:23 pid:12856 Workerman[init.php] stop 
+2017-09-01 16:45:23 pid:12856 Workerman[init.php] not run
+2017-09-01 16:45:24 pid:12857 Workerman[init.php] stop 
+2017-09-01 16:45:24 pid:12857 Workerman[init.php] not run
+2017-09-01 16:45:31 pid:12859 Workerman[init.php] status 
+2017-09-01 16:45:31 pid:12859 Workerman[init.php] not run
+2017-09-01 16:45:33 pid:12861 Workerman[init.php] status 
+2017-09-01 16:45:33 pid:12861 Workerman[init.php] not run
+2017-09-01 16:45:33 pid:12862 Workerman[init.php] status 
+2017-09-01 16:45:33 pid:12862 Workerman[init.php] not run
+2017-09-01 16:45:34 pid:12863 Workerman[init.php] status 
+2017-09-01 16:45:34 pid:12863 Workerman[init.php] not run
+2017-09-01 16:45:34 pid:12864 Workerman[init.php] status 
+2017-09-01 16:45:34 pid:12864 Workerman[init.php] not run
+2017-09-01 16:45:35 pid:12865 Workerman[init.php] status 
+2017-09-01 16:45:35 pid:12865 Workerman[init.php] not run
+2017-09-01 16:45:35 pid:12866 Workerman[init.php] status 
+2017-09-01 16:45:35 pid:12866 Workerman[init.php] not run
+2017-09-01 16:45:36 pid:12867 Workerman[init.php] status 
+2017-09-01 16:45:36 pid:12867 Workerman[init.php] not run
+2017-09-01 16:45:36 pid:12868 Workerman[init.php] status 
+2017-09-01 16:45:36 pid:12868 Workerman[init.php] not run
+2017-09-01 16:45:40 pid:12869 Workerman[init.php] start in DAEMON mode
+2017-09-01 16:50:20 pid:13051 Workerman[init.php] stop 
+2017-09-01 16:50:20 pid:13051 Workerman[init.php] not run
+2017-09-01 16:50:21 pid:13052 Workerman[init.php] stop 
+2017-09-01 16:50:21 pid:13052 Workerman[init.php] not run
+2017-09-01 16:50:25 pid:13054 Workerman[init.php] stop 
+2017-09-01 16:50:25 pid:13054 Workerman[init.php] not run
+2017-09-01 16:51:40 pid:13098 Workerman[init.php] start in DAEMON mode
+2017-09-01 16:51:56 pid:13112 Workerman[init.php] status 
+2017-09-01 16:51:56 pid:13112 Workerman[init.php] not run
+2017-09-01 16:52:51 pid:13147 Workerman[init.php] status 
+2017-09-01 16:52:51 pid:13147 Workerman[init.php] not run
+2017-09-01 16:52:53 pid:13150 Workerman[init.php] status 
+2017-09-01 16:52:53 pid:13150 Workerman[init.php] not run
+2017-09-01 16:52:54 pid:13151 Workerman[init.php] status 
+2017-09-01 16:52:54 pid:13151 Workerman[init.php] not run
+2017-09-01 16:52:55 pid:13152 Workerman[init.php] status 
+2017-09-01 16:52:55 pid:13152 Workerman[init.php] not run
+2017-09-01 16:52:55 pid:13153 Workerman[init.php] status 
+2017-09-01 16:52:55 pid:13153 Workerman[init.php] not run
+2017-09-01 16:52:56 pid:13154 Workerman[init.php] status 
+2017-09-01 16:52:56 pid:13154 Workerman[init.php] not run
+2017-09-01 16:52:56 pid:13155 Workerman[init.php] status 
+2017-09-01 16:52:56 pid:13155 Workerman[init.php] not run
+2017-09-01 16:52:58 pid:13156 Workerman[init.php] status 
+2017-09-01 16:52:58 pid:13156 Workerman[init.php] not run
+2017-09-01 16:55:35 pid:13239 Workerman[init.php] status 
+2017-09-01 16:55:35 pid:13239 Workerman[init.php] not run
+2017-09-01 16:55:45 pid:13241 Workerman[init.php] start in DEBUG mode
+2017-09-01 16:56:23 pid:13263 Workerman[init.php] start in DEBUG mode
+2017-09-01 16:56:28 pid:13263 Workerman[init.php] Stopping ...
+2017-09-01 16:56:28 pid:13263 Workerman[init.php] has been stopped
+2017-09-01 16:56:32 pid:13274 Workerman[init.php] start in DAEMON mode
+2017-09-01 16:56:38 pid:13284 Workerman[init.php] status 
+2017-09-01 16:56:38 pid:13284 Workerman[init.php] not run
+2017-09-01 16:57:04 pid:13301 Workerman[init.php] stop 
+2017-09-01 16:57:04 pid:13301 Workerman[init.php] not run
+2017-09-01 16:57:26 pid:13317 Workerman[init.php] stop 
+2017-09-01 16:57:26 pid:13317 Workerman[init.php] not run
+2017-09-01 16:57:27 pid:13318 Workerman[init.php] stop 
+2017-09-01 16:57:27 pid:13318 Workerman[init.php] not run
+2017-09-01 16:57:30 pid:13319 Workerman[init.php] status 
+2017-09-01 16:57:30 pid:13319 Workerman[init.php] not run
+2017-09-01 16:57:35 pid:13323 Workerman[init.php] start in DAEMON mode
+2017-09-01 17:00:01 pid:13389 Workerman[init.php] start in DAEMON mode
+2017-09-01 17:00:10 pid:13402 Workerman[init.php] status 
+2017-09-01 17:14:52 pid:13779 Workerman[init.php] status 
+2017-09-01 18:29:10 pid:15713 Workerman[init.php] status 
+2017-09-01 18:29:19 pid:13395 Error: Class 'Lib\Core' not found in /home/www/Chat/Application/Web/index.php:20
+Stack trace:
+#0 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include()
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #33, 2, Resource id #33)
+#4 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#5 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#7 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#10 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#11 {main}
+2017-09-01 18:29:19 pid:13395 Worker[13395] process terminated
+2017-09-01 18:29:19 pid:13391 worker[WebServer:13395] exit with status 64000
+2017-09-01 18:29:27 pid:13394 Error: Class 'Lib\Core' not found in /home/www/Chat/Application/Web/index.php:20
+Stack trace:
+#0 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include()
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #33, 2, Resource id #33)
+#4 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#5 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#7 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#10 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#11 {main}
+2017-09-01 18:29:27 pid:13394 Worker[13394] process terminated
+2017-09-01 18:29:27 pid:13391 worker[WebServer:13394] exit with status 64000
+2017-09-01 18:30:57 pid:15716 Error: Class 'Lib\Core' not found in /home/www/Chat/Application/Web/index.php:20
+Stack trace:
+#0 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include()
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #60, 2, Resource id #60)
+#4 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#5 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#7 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-01 18:30:57 pid:15716 Worker[15716] process terminated
+2017-09-01 18:30:57 pid:13391 worker[WebServer:15716] exit with status 64000
+2017-09-01 18:30:58 pid:13392 Error: Class 'Lib\Core' not found in /home/www/Chat/Application/Web/index.php:20
+Stack trace:
+#0 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include()
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #33, 2, Resource id #33)
+#4 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#5 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#7 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#10 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#11 {main}
+2017-09-01 18:30:58 pid:13392 Worker[13392] process terminated
+2017-09-01 18:30:58 pid:13391 worker[WebServer:13392] exit with status 64000
+2017-09-01 18:30:59 pid:13393 Error: Class 'Lib\Core' not found in /home/www/Chat/Application/Web/index.php:20
+Stack trace:
+#0 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include()
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #33, 2, Resource id #33)
+#4 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#5 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#7 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#10 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#11 {main}
+2017-09-01 18:30:59 pid:13393 Worker[13393] process terminated
+2017-09-01 18:30:59 pid:13391 worker[WebServer:13393] exit with status 64000
+2017-09-01 18:31:06 pid:13396 Error: Class 'Lib\Core' not found in /home/www/Chat/Application/Web/index.php:20
+Stack trace:
+#0 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include()
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #33, 2, Resource id #33)
+#4 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#5 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#7 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#10 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#11 {main}
+2017-09-01 18:31:06 pid:13396 Worker[13396] process terminated
+2017-09-01 18:31:06 pid:13391 worker[WebServer:13396] exit with status 64000
+2017-09-01 18:32:34 pid:15756 Error: Class 'Lib\Core' not found in /home/www/Chat/Application/Web/index.php:20
+Stack trace:
+#0 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include()
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #62, 2, Resource id #62)
+#4 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#5 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#7 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-01 18:32:34 pid:15756 Worker[15756] process terminated
+2017-09-01 18:32:34 pid:13391 worker[WebServer:15756] exit with status 64000
+2017-09-01 18:32:35 pid:15760 Error: Class 'Lib\Core' not found in /home/www/Chat/Application/Web/index.php:20
+Stack trace:
+#0 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include()
+#1 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #64, 2, Resource id #64)
+#4 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#5 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#7 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-01 18:32:35 pid:15760 Worker[15760] process terminated
+2017-09-01 18:32:35 pid:13391 worker[WebServer:15760] exit with status 64000
+2017-09-01 18:34:42 pid:15890 Workerman[init.php] status 

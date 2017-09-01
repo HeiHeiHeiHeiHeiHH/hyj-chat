@@ -1,0 +1,25 @@
+{
+    "name"  : "HeiHeiHeiHeiHeiHH/hyj-chat",
+    "type"  : "project",
+    "keywords": ["chat","hyj","test"],
+    "licence" : "MIT",
+    "respostories":{
+       "packagist": {
+          "type":"composer",
+          "url":"https://packagist.phpcomposer.com"
+       }
+    },
+    "description":"a chatroom bulit with workerman, just for fun,and improve my power~~~  =.= ",
+    "authors": [
+	{
+	"name":"Master Lew",
+	"email": "zhongqil@jumei.com"
+ 	}
+    ],
+    "require": {
+        "workerman/workerman" : ">=3.4.8"
+    },
+    "autoload":{
+	
+    }
+}
