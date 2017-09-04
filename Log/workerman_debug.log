@@ -216,3 +216,486 @@ Stack trace:
 2017-09-01 18:32:35 pid:15760 Worker[15760] process terminated
 2017-09-01 18:32:35 pid:13391 worker[WebServer:15760] exit with status 64000
 2017-09-01 18:34:42 pid:15890 Workerman[init.php] status 
+2017-09-04 10:08:50 pid:5105 Workerman[init.php] start in DAEMON mode
+2017-09-04 10:08:56 pid:5114 Workerman[init.php] status 
+2017-09-04 10:21:43 pid:5394 Workerman[init.php] status 
+2017-09-04 10:21:56 pid:5399 Workerman[init.php] restart 
+2017-09-04 10:21:56 pid:5399 Workerman[init.php] is stoping ...
+2017-09-04 10:21:56 pid:5107 Workerman[init.php] Stopping ...
+2017-09-04 10:21:56 pid:5107 Workerman[init.php] has been stopped
+2017-09-04 10:21:56 pid:5399 Workerman[init.php] stop success
+2017-09-04 10:22:06 pid:5412 Workerman[init.php] status 
+2017-09-04 11:02:59 pid:6251 Workerman[init.php] restart 
+2017-09-04 11:02:59 pid:6251 Workerman[init.php] is stoping ...
+2017-09-04 11:02:59 pid:5401 Workerman[init.php] Stopping ...
+2017-09-04 11:02:59 pid:5401 Workerman[init.php] has been stopped
+2017-09-04 11:02:59 pid:6251 Workerman[init.php] stop success
+2017-09-04 17:23:25 pid:6258 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #36, 2, Resource id #36)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:23:25 pid:6258 Worker[6258] process terminated
+2017-09-04 17:23:25 pid:6253 worker[WebServer:6258] exit with status 64000
+2017-09-04 17:26:05 pid:14277 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #36, 2, Resource id #36)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#13 {main}
+2017-09-04 17:26:05 pid:14277 Worker[14277] process terminated
+2017-09-04 17:26:05 pid:6253 worker[WebServer:14277] exit with status 64000
+2017-09-04 17:26:24 pid:14426 Workerman[init.php] restart 
+2017-09-04 17:26:24 pid:14426 Workerman[init.php] is stoping ...
+2017-09-04 17:26:24 pid:6253 Workerman[init.php] Stopping ...
+2017-09-04 17:26:24 pid:6255 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:26:24 pid:6255 Worker[6255] process terminated
+2017-09-04 17:26:24 pid:6253 worker[WebServer:6255] exit with status 64000
+2017-09-04 17:26:24 pid:6253 Workerman[init.php] has been stopped
+2017-09-04 17:26:24 pid:14426 Workerman[init.php] stop success
+2017-09-04 17:26:28 pid:14432 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:26:28 pid:14432 Worker[14432] process terminated
+2017-09-04 17:26:28 pid:14428 worker[WebServer:14432] exit with status 64000
+2017-09-04 17:26:55 pid:14434 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:26:55 pid:14434 Worker[14434] process terminated
+2017-09-04 17:26:55 pid:14433 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:26:55 pid:14433 Worker[14433] process terminated
+2017-09-04 17:26:55 pid:14431 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:26:55 pid:14431 Worker[14431] process terminated
+2017-09-04 17:26:55 pid:14428 worker[WebServer:14434] exit with status 64000
+2017-09-04 17:26:55 pid:14428 worker[WebServer:14433] exit with status 64000
+2017-09-04 17:26:55 pid:14428 worker[WebServer:14431] exit with status 64000
+2017-09-04 17:26:55 pid:14430 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:26:55 pid:14430 Worker[14430] process terminated
+2017-09-04 17:26:55 pid:14428 worker[WebServer:14430] exit with status 64000
+2017-09-04 17:26:57 pid:14436 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #33, 2, Resource id #33)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#13 {main}
+2017-09-04 17:26:57 pid:14436 Worker[14436] process terminated
+2017-09-04 17:26:57 pid:14428 worker[WebServer:14436] exit with status 64000
+2017-09-04 17:26:58 pid:14487 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #37, 2, Resource id #37)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#13 {main}
+2017-09-04 17:26:58 pid:14487 Worker[14487] process terminated
+2017-09-04 17:26:58 pid:14428 worker[WebServer:14487] exit with status 64000
+2017-09-04 17:26:59 pid:14482 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #34, 2, Resource id #34)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#13 {main}
+2017-09-04 17:26:59 pid:14482 Worker[14482] process terminated
+2017-09-04 17:26:59 pid:14428 worker[WebServer:14482] exit with status 64000
+2017-09-04 17:26:59 pid:14483 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #35, 2, Resource id #35)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#13 {main}
+2017-09-04 17:26:59 pid:14483 Worker[14483] process terminated
+2017-09-04 17:26:59 pid:14428 worker[WebServer:14483] exit with status 64000
+2017-09-04 17:27:04 pid:14489 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #39, 2, Resource id #39)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#13 {main}
+2017-09-04 17:27:04 pid:14489 Worker[14489] process terminated
+2017-09-04 17:27:04 pid:14428 worker[WebServer:14489] exit with status 64000
+2017-09-04 17:27:08 pid:14520 Workerman[init.php] status 
+2017-09-04 17:27:24 pid:14429 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #34, 2, Resource id #34)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:27:24 pid:14429 Worker[14429] process terminated
+2017-09-04 17:27:24 pid:14428 worker[WebServer:14429] exit with status 64000
+2017-09-04 17:27:34 pid:14484 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #38, 2, Resource id #38)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#13 {main}
+2017-09-04 17:27:34 pid:14484 Worker[14484] process terminated
+2017-09-04 17:27:34 pid:14428 worker[WebServer:14484] exit with status 64000
+2017-09-04 17:27:52 pid:14492 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #43, 2, Resource id #43)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#13 {main}
+2017-09-04 17:27:52 pid:14492 Worker[14492] process terminated
+2017-09-04 17:27:52 pid:14428 worker[WebServer:14492] exit with status 64000
+2017-09-04 17:27:53 pid:14508 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #44, 2, Resource id #44)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#13 {main}
+2017-09-04 17:27:53 pid:14508 Worker[14508] process terminated
+2017-09-04 17:27:53 pid:14428 worker[WebServer:14508] exit with status 64000
+2017-09-04 17:27:55 pid:14546 Workerman[init.php] restart 
+2017-09-04 17:27:55 pid:14546 Workerman[init.php] is stoping ...
+2017-09-04 17:27:55 pid:14428 Workerman[init.php] Stopping ...
+2017-09-04 17:27:55 pid:14428 Workerman[init.php] has been stopped
+2017-09-04 17:27:55 pid:14546 Workerman[init.php] stop success
+2017-09-04 17:27:56 pid:14550 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:27:56 pid:14550 Worker[14550] process terminated
+2017-09-04 17:27:56 pid:14548 worker[WebServer:14550] exit with status 64000
+2017-09-04 17:28:02 pid:14552 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:28:02 pid:14552 Worker[14552] process terminated
+2017-09-04 17:28:02 pid:14548 worker[WebServer:14552] exit with status 64000
+2017-09-04 17:28:03 pid:14557 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #33, 2, Resource id #33)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#13 {main}
+2017-09-04 17:28:03 pid:14557 Worker[14557] process terminated
+2017-09-04 17:28:03 pid:14548 worker[WebServer:14557] exit with status 64000
+2017-09-04 17:28:04 pid:14551 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:28:04 pid:14551 Worker[14551] process terminated
+2017-09-04 17:28:04 pid:14548 worker[WebServer:14551] exit with status 64000
+2017-09-04 17:28:05 pid:14553 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:28:05 pid:14553 Worker[14553] process terminated
+2017-09-04 17:28:05 pid:14548 worker[WebServer:14553] exit with status 64000
+2017-09-04 17:28:12 pid:14549 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #32, 2, Resource id #32)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#12 {main}
+2017-09-04 17:28:12 pid:14549 Worker[14549] process terminated
+2017-09-04 17:28:12 pid:14548 worker[WebServer:14549] exit with status 64000
+2017-09-04 17:28:13 pid:14567 Error: Call to undefined method App\Auth::Login() in /home/www/Chat/Application/Web/Lib/Core.php:42
+Stack trace:
+#0 /home/www/Chat/Application/Web/index.php(24): Lib\Core::dispatch()
+#1 /home/www/Chat/vendor/workerman/workerman/WebServer.php(203): include('/home/www/Chat/...')
+#2 [internal function]: Workerman\WebServer->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/www/Chat/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #36, 2, Resource id #36)
+#5 /home/www/Chat/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /home/www/Chat/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Event->loop()
+#7 /home/www/Chat/vendor/workerman/workerman/WebServer.php(81): Workerman\Worker->run()
+#8 /home/www/Chat/vendor/workerman/workerman/Worker.php(1025): Workerman\WebServer->run()
+#9 /home/www/Chat/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\WebServer))
+#10 /home/www/Chat/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#11 /home/www/Chat/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/www/Chat/init.php(29): Workerman\Worker::runAll()
+#13 {main}
+2017-09-04 17:28:13 pid:14567 Worker[14567] process terminated
+2017-09-04 17:28:13 pid:14548 worker[WebServer:14567] exit with status 64000
+2017-09-04 17:29:06 pid:14644 Workerman[init.php] restart 
+2017-09-04 17:29:06 pid:14644 Workerman[init.php] is stoping ...
+2017-09-04 17:29:06 pid:14548 Workerman[init.php] Stopping ...
+2017-09-04 17:29:06 pid:14548 Workerman[init.php] has been stopped
+2017-09-04 17:29:06 pid:14644 Workerman[init.php] stop success
+2017-09-04 17:33:16 pid:14781 Workerman[init.php] restart 
+2017-09-04 17:33:16 pid:14781 Workerman[init.php] is stoping ...
+2017-09-04 17:33:16 pid:14646 Workerman[init.php] Stopping ...
+2017-09-04 17:33:16 pid:14646 Workerman[init.php] has been stopped
+2017-09-04 17:33:16 pid:14781 Workerman[init.php] stop success
+2017-09-04 17:33:51 pid:14891 Workerman[init.php] restart 
+2017-09-04 17:33:51 pid:14891 Workerman[init.php] is stoping ...
+2017-09-04 17:33:51 pid:14783 Workerman[init.php] Stopping ...
+2017-09-04 17:33:51 pid:14783 Workerman[init.php] has been stopped
+2017-09-04 17:33:51 pid:14891 Workerman[init.php] stop success
+2017-09-04 17:39:43 pid:15234 Workerman[../init.php] restart 
+2017-09-04 17:39:43 pid:15234 Workerman[../init.php] is stoping ...
+2017-09-04 17:39:43 pid:14893 Workerman[init.php] Stopping ...
+2017-09-04 17:39:43 pid:14893 Workerman[init.php] has been stopped
+2017-09-04 17:39:43 pid:15234 Workerman[../init.php] stop success
+2017-09-04 17:39:48 pid:15245 Workerman[../init.php] status 
+2017-09-04 17:41:05 pid:15343 Workerman[../init.php] status 
+2017-09-04 17:41:08 pid:15344 Workerman[../init.php] restart 
+2017-09-04 17:41:08 pid:15344 Workerman[../init.php] is stoping ...
+2017-09-04 17:41:08 pid:15236 Workerman[init.php] Stopping ...
+2017-09-04 17:41:08 pid:15236 Workerman[init.php] has been stopped
+2017-09-04 17:41:08 pid:15344 Workerman[../init.php] stop success
+2017-09-04 17:41:10 pid:15353 Workerman[../init.php] status 
+2017-09-04 17:41:45 pid:15380 Workerman[../init.php] status 
+2017-09-04 17:47:23 pid:15600 Workerman[../init.php] restart 
+2017-09-04 17:47:23 pid:15600 Workerman[../init.php] is stoping ...
+2017-09-04 17:47:23 pid:15346 Workerman[init.php] Stopping ...
+2017-09-04 17:47:23 pid:15346 Workerman[init.php] has been stopped
+2017-09-04 17:47:23 pid:15600 Workerman[../init.php] stop success
+2017-09-04 17:50:43 pid:15999 Workerman[init.php] stop 
+2017-09-04 17:50:43 pid:15999 Workerman[init.php] is stoping ...
+2017-09-04 17:50:43 pid:15602 Workerman[init.php] Stopping ...
+2017-09-04 17:50:43 pid:15602 Workerman[init.php] has been stopped
+2017-09-04 17:50:43 pid:15999 Workerman[init.php] stop success

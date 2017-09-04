@@ -33,61 +33,60 @@ class Core
     public static function dispatch() {
         $controllerAndMethod = self::getControllerAndMethod();
         extract($controllerAndMethod);
-        $namespace = self::isClassFile($namespace); // 判断指定的命名空间是否存在 不存在获取默认的
-
-        if (!method_exists($namespace, $method)) {
-            http::end("请访问一个已知的方法～");
+        $namespace = self::isClassFile($controllerDir, $controllerFile); // 判断指定的命名空间是否存在 不存在获取默认的
+        if (!method_exists($namespace, $controllerMethod)) {
+            $controllerMethod = 'defaultMethod';
         }
 
-        return array(
-            "namespace" => $namespace,
-            "method"    => $method
-        );
+        $namespace::instance()->$controllerMethod();
     }
 
     public static function getControllerAndMethod() {
-        $requestUri = trim($_SERVER['REQUEST_URI'], '/');
+        $requestUri = $_SERVER['REQUEST_URI'];
         if (!$requestUri) {
             return array(
-                "namespace" => "App\Auth",
-                "method" => "Index"
+                "controllerDir"  => '',
+                "controllerFile" => 'Auth',
+                "controllerMethod" => "Auth"
             );
         }
-        $explodeUri = explode("?", $requestUri);
-        $controllerPwd = $explodeUri['0'];
-
-        $explodePwd = explode("/", $controllerPwd);
-        $namespace = "App\\";
-        $method = '';
-        foreach ($explodePwd as $value) {
-            if (is_dir(CHAT_PATH . "App/" . "$value")) {
-                $namespace .= $value . "\\";
+        $controllerDir = '';
+        $controllerFile = '';
+        $controllerMethod = '';
+        $explodeUri = explode('?', $requestUri);
+        $pwdInfo = explode('/', trim($explodeUri[0], '/'));
+        $tmpPwd = 'App/';
+        foreach ($pwdInfo as $value) {
+            if (is_dir(CHAT_PATH . 'App/' . $value)) {
+                $tmpPwd .= $value . '/';
+                $controllerDir .=   $value;
+                continue;
+            }
+            if (is_file(CHAT_PATH . $tmpPwd . '/' . $value . '.php')) {
+                $controllerFile = $value;
                 continue;
             }
 
-            if (is_file(CHAT_PATH . "App/" . "$value" . ".php")) {
-                $namespace .= $value;
-                continue;
-            }
-
-            $method = $value;
+            $controllerMethod = $value;
         }
 
-        $method = $method == '' ? 'Index' : $method;
+        $controllerMethod = $controllerMethod == '' ? 'Index' : $controllerMethod;
 
         return array(
-            "namespace" => $namespace,
-            "method"    => $method
+            'controllerDir' => $controllerDir,
+            'controllerFile' => $controllerFile,
+            'controllerMethod'  => $controllerMethod
         );
     }
 
-    public static function isClassFile($namespace) {
-        if (!$namespace) {
-            return "App\Auth";
+    public static function isClassFile($controllerDir, $controllerFile) {
+        if (!$controllerFile) {
+            return "App\\Auth";
         } else {
-            $init = "App\Auth";
-            if (class_exists($namespace))
-                return $namespace;
+            $init = "Appt\\Auth";
+            if (class_exists("App\\$controllerDir" . "\\$controllerFile")) {
+                return "App\\$controllerDir\\$controllerFile";
+            }
 
             return $init;
         }
