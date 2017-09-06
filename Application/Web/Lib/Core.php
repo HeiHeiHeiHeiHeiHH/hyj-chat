@@ -39,13 +39,14 @@ class Core
         }
 
         $namespace::instance()->$controllerMethod();
+
     }
 
     public static function getControllerAndMethod() {
         $requestUri = $_SERVER['REQUEST_URI'];
         if (!$requestUri) {
             return array(
-                "controllerDir"  => '',
+                "controllerDir"  => 'Controller',
                 "controllerFile" => 'Auth',
                 "controllerMethod" => "Auth"
             );
@@ -62,7 +63,7 @@ class Core
                 $controllerDir .=   $value;
                 continue;
             }
-            if (is_file(CHAT_PATH . $tmpPwd . '/' . $value . '.php')) {
+            if (is_file(CHAT_PATH . $tmpPwd . '/' . $value . '.php') && !$controllerFile) {
                 $controllerFile = $value;
                 continue;
             }
@@ -83,7 +84,7 @@ class Core
         if (!$controllerFile) {
             return "App\\Auth";
         } else {
-            $init = "Appt\\Auth";
+            $init = "App\\Auth";
             if (class_exists("App\\$controllerDir" . "\\$controllerFile")) {
                 return "App\\$controllerDir\\$controllerFile";
             }

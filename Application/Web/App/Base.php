@@ -19,8 +19,7 @@ class Base
     }
 
     public function defaultMethod() {
-        #header("Location: http://www.hyj.com");
-        echo "Yes ~~";
+        echo "404 NOT FIND";
     }
 
     public function setMessage($msg, $uid) {

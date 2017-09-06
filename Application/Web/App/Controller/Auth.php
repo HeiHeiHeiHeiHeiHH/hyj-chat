@@ -1,11 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Controller;
 
 class Auth extends \App\Base
 {
-    public static $instance;
-
     public function Auth()
     {
         echo "Auth Auth";

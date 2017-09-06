@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php
-        require_once CHAT_PATH . 'Tpl/' . $data['file'];
+        require_once CHAT_PATH . 'Tpl/' . $data['file'] . ".php";
     ?>
 <div class="">
 

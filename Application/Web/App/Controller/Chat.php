@@ -5,7 +5,7 @@ use App\Base;
 
 class Chat extends Base
 {
-    public function hehe()
+    public function Chat()
     {
         echo "Crontroller Chat HEHE";
     }
