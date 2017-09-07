@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    float: inherit;
+}
+
+.backgroundimg {
+    background-image: url("../Image/avicii.jpg");
+    background-repeat: repeat;
+}
+
+.body_head {
+    color: #00a8c6;
+    padding-top: 5%;
+}
+
+.inputsize {
+    background-color: transparent;
+    color: honeydew;
+    text-align: center;
+}
+
+.group_pos {
+    width:20%;
+    position: relative;
+    left: 40%;
+    padding-top: 8%;
+}
+
+.grouppos {
+    width:20%;
+    height: 15%;
+    position: relative;
+    left:40%;
+    right:40%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.register_pos {
+    position: relative;
+    left:40%;
+    padding-top: 3%;
+}
+
+.login_btn {
+    margin-left: 20px;
+}

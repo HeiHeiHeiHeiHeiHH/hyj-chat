@@ -4,13 +4,27 @@ namespace App\Controller;
 
 class Auth extends \App\Base
 {
-    public function Auth()
+    public function auth()
     {
-        echo "Auth Auth";
+        $data = array();
+        $data['file'] = "/Login/Login";
+        $this->Assign($data);
     }
 
-    public function Register()
+    public function register()
     {
-        echo "Auto Register";
+
+    }
+
+    public function openRegister()
+    {
+        $data['file'] = "/Login/Register";
+        $this->Assign($data);
+    }
+
+    public function openFind()
+    {
+        $data['file'] = "/Login/Find";
+        $this->Assign($data);
     }
 }
