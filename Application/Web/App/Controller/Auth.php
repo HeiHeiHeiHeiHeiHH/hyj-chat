@@ -27,4 +27,9 @@ class Auth extends \App\Base
         $data['file'] = "/Login/Find";
         $this->Assign($data);
     }
+
+    public function About()
+    {
+
+    }
 }

@@ -47,3 +47,7 @@ body {
 .login_btn {
     margin-left: 20px;
 }
+
+.page-header {
+    padding-top: 5px;
+}

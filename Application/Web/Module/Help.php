@@ -27,16 +27,8 @@ class Help
         return isset($_POST[$key]) ? $_POST[$key] : '';
     }
 
-    /**
-     * 以后再说～.
-     *
-     * @param string $key  key.
-     *
-     * @return boolean;
-     */
     public static function fileData($key) {
-        //TODO 不知道弄啥～～～
-        return true;
+        return isset($_FILES[$key]) ? $_FILES[$key] : '';
     }
 
     public static function getUri()

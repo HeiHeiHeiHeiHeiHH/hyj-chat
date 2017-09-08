@@ -43,12 +43,12 @@ class Core
     }
 
     public static function getControllerAndMethod() {
-        $requestUri = $_SERVER['REQUEST_URI'];
+        $requestUri = trim($_SERVER['REQUEST_URI'], "/");
         if (!$requestUri) {
             return array(
                 "controllerDir"  => 'Controller',
                 "controllerFile" => 'Auth',
-                "controllerMethod" => "Auth"
+                "controllerMethod" => "auth"
             );
         }
         $controllerDir = '';
@@ -81,15 +81,13 @@ class Core
     }
 
     public static function isClassFile($controllerDir, $controllerFile) {
-        if (!$controllerFile) {
-            return "App\\Auth";
+        if ($controllerDir != "" && $controllerFile != "") {
+            $namespace = "App\\" . $controllerDir . "\\" . $controllerFile;
+            $namespace = class_exists("App\\" . $namespace) ? $namespace : "App\\Controller\\Auth";
         } else {
-            $init = "App\\Auth";
-            if (class_exists("App\\$controllerDir" . "\\$controllerFile")) {
-                return "App\\$controllerDir\\$controllerFile";
-            }
-
-            return $init;
+            $namespace = "App\\Controller\\Auth";
         }
+
+        return $namespace;
     }
 }
