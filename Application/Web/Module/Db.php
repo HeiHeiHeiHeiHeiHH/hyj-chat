@@ -74,7 +74,7 @@ class Db
         }, $fields);
         $valuestring = implode(",", $valuearray);
 
-        return "insert into $table ($fieldstring) values ($valuestring)";
+        return "insert into $table($fieldstring) values($valuestring)";
 
     }
 
@@ -121,22 +121,33 @@ class Db
     }
 
     //主要在执行更新与删除操作时检测是否具有条件语句
-    public function checkSomeSqlHasCondition()
+    public function checkSomeSqlHasCondition($sql)
     {
-        if (strpos($this->commitSql, "WHERE") === false) {
+        if (strpos($sql, "WHERE") === false) {
             return false;
         }
         return true;
     }
 
-    public function buildWhere($condition)
+    // 这个感觉好难 只会一个=
+    public function buildWhere($con)
     {
+        $whereConditon = '';
+        foreach ($con as $key=>$value) {
+            if ($key != "=") {
+                return $whereConditon;
+            }
 
+            foreach ($value as $field=>$val) {
+                $whereConditon .= "{$field} = \"$val\" AND";
+            }
+        }
+        return "WHERE" . trim($whereConditon, "AND");
     }
 
-    public function bindParam($data, &$execSql)
+    public function bindParam($data, $execSql)
     {
-        foreach ($data as $key => $value) {
+        foreach ($data as $key => &$value) {
             $execSql->bindParam(":$key", $value);
         }
     }
@@ -200,28 +211,27 @@ class Db
             $this->commitSql = $this->prepareInsert($table, $data);
             $execSql = $this->connection->prepare($this->commitSql);
 
-            foreach ($data as $key => $va) {
-                $execSql->bindParam(":$key", $va);
-            }
+            $this->bindParam($data, $execSql);
 
-            $execSql->execute();
-            var_dump($execSql->errorInfo());
+           return $execSql->execute();
         }
 
         try{
-            $this->connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+            $this->connection->setAttribute(\PDO::ATTR_ERRMODE,\PDO::ERRMODE_EXCEPTION);
             $this->connection->beginTransaction();
 
-            $this->commitSql = $this->prepareInsert($table, $data[0]);
-            $execSql = $this->connection->prepare($this->commitSql);
             foreach ($data as $datum) {
+                $insertSql = $this->prepareInsert($table, $datum);
+                $execSql = $this->connection->prepare($insertSql);
                 $this->bindParam($datum, $execSql);
                 $execSql->execute();
             }
+
+            $this->connection->commit();
             return true;
         } catch (\PDOException $exception) {
-            $this->connection->roolBack();
-            return false;
+            $this->connection->rollBack();
+            exit($exception->getMessage());
         }
     }
 
@@ -231,7 +241,7 @@ class Db
         if (!empty($condition)) {
             $this->commitSql .= $this->buildWhere($condition);
         }
-        if (!$this->checkSomeSqlHasCondition()) {
+        if (!$this->checkSomeSqlHasCondition($this->commitSql)) {
             exit("There must be a condition when you do Delete or Update~~~~");
         }
 
@@ -250,23 +260,27 @@ class Db
             $this->commitSql = $this->prepareDelete($table);
             $this->commitSql .= $this->buildWhere($condition);
             $execSql = $this->connection->prepare($this->commitSql);
-
+            if (!$this->checkSomeSqlHasCondition($this->commitSql)) {
+                exit("The Condition is wrong~");
+            }
             return $execSql->execute();
         }
 
         try {
-            $this->connection->setAtterbute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+            $this->connection->setAtterbute(\PDO::ATTR_ERRMODE,\PDO::ERRMODE_EXCEPTION);
             $this->connection->beginTransation();
 
-            foreach ($condition as $value) {
+            foreach ($condition as &$value) {
                 $sql = $this->prepareDelete($table);
                 $sql .= $this->buildWhere($value);
-
+                if (!$this->checkSomeSqlHasCondition($sql)) {
+                    exit("The Condition is wrong~");
+                }
                 $execSql = $this->connection->prepare($sql);
 
                 $execSql->excute();
             }
-
+            $this->connection->commit();
             return true;
         } catch (\PDOException $exception) {
             $this->connection->rollBack();
